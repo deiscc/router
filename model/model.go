@@ -8,8 +8,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/deis/router/utils"
-	modelerUtility "github.com/deis/router/utils/modeler"
+	"github.com/deiscc/router/utils"
+	modelerUtility "github.com/deiscc/router/utils/modeler"
 	"k8s.io/client-go/1.4/kubernetes"
 	"k8s.io/client-go/1.4/pkg/api"
 	"k8s.io/client-go/1.4/pkg/api/errors"
@@ -21,7 +21,7 @@ import (
 )
 
 const (
-	prefix               string = "router.deis.io"
+	prefix               string = "router.deis.cc"
 	modelerFieldTag      string = "key"
 	modelerConstraintTag string = "constraint"
 )

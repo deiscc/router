@@ -8,7 +8,7 @@ import (
 	"text/template"
 
 	"github.com/Masterminds/sprig"
-	"github.com/deis/router/model"
+	"github.com/deiscc/router/model"
 )
 
 const (

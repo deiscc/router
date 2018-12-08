@@ -6,12 +6,12 @@ metadata:
   labels:
     heritage: deis
   annotations:
-    component.deis.io/version: {{ .Values.docker_tag }}
+    component.deis.cc/version: {{ .Values.docker_tag }}
 {{- range $key, $value := .Values.deployment_annotations }}
     {{ $key }}: {{ quote $value }}
 {{- end }}
 {{- if not (empty .Values.platform_domain) }}
-    router.deis.io/nginx.platformDomain: {{ .Values.platform_domain }}
+    router.deis.cc/nginx.platformDomain: {{ .Values.platform_domain }}
 {{- end }}
 spec:
   replicas: 1

@@ -25,10 +25,10 @@ func TestBuildRouterConfig(t *testing.T) {
 			Name:      routerName,
 			Namespace: deisNamespace,
 			Annotations: map[string]string{
-				"router.deis.io/nginx.defaultTimeout":             "1500s",
-				"router.deis.io/nginx.ssl.bufferSize":             "6k",
-				"router.deis.io/nginx.ssl.hsts.maxAge":            "1234",
-				"router.deis.io/nginx.ssl.hsts.includeSubDomains": "true",
+				"router.deis.cc/nginx.defaultTimeout":             "1500s",
+				"router.deis.cc/nginx.ssl.bufferSize":             "6k",
+				"router.deis.cc/nginx.ssl.hsts.maxAge":            "1234",
+				"router.deis.cc/nginx.ssl.hsts.includeSubDomains": "true",
 			},
 			Labels: map[string]string{
 				"heritage": "deis",
@@ -136,7 +136,7 @@ func TestBuildBuilderConfig(t *testing.T) {
 				"heritage": "deis",
 			},
 			Annotations: map[string]string{
-				"router.deis.io/nginx.connectTimeout": "20s",
+				"router.deis.cc/nginx.connectTimeout": "20s",
 			},
 		},
 		Spec: v1.ServiceSpec{

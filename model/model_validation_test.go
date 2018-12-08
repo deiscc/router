@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	modelerUtility "github.com/deis/router/utils/modeler"
+	modelerUtility "github.com/deiscc/router/utils/modeler"
 )
 
 var (

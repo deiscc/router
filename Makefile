@@ -2,17 +2,17 @@ include includes.mk
 
 SHORT_NAME := router
 DEIS_REGISTRY ?= ${DEV_REGISTRY}
-IMAGE_PREFIX ?= deis
+IMAGE_PREFIX ?= deiscc
 
 include versioning.mk
 
 SHELL_SCRIPTS = $(wildcard rootfs/bin/*) rootfs/opt/router/sbin/boot
 
-REPO_PATH := github.com/deis/${SHORT_NAME}
+REPO_PATH := github.com/deiscc/${SHORT_NAME}
 
 # The following variables describe the containerized development environment
 # and other build options
-DEV_ENV_IMAGE := quay.io/deis/go-dev:v0.22.0
+DEV_ENV_IMAGE := deiscc/go-dev
 DEV_ENV_WORK_DIR := /go/src/${REPO_PATH}
 DEV_ENV_CMD := docker run --rm -v ${CURDIR}:${DEV_ENV_WORK_DIR} -w ${DEV_ENV_WORK_DIR} ${DEV_ENV_IMAGE}
 DEV_ENV_CMD_INT := docker run -it --rm -v ${CURDIR}:${DEV_ENV_WORK_DIR} -w ${DEV_ENV_WORK_DIR} ${DEV_ENV_IMAGE}

@@ -4,8 +4,8 @@ import (
 	"log"
 	"reflect"
 
-	"github.com/deis/router/model"
-	"github.com/deis/router/nginx"
+	"github.com/deiscc/router/model"
+	"github.com/deiscc/router/nginx"
 	"k8s.io/client-go/1.4/kubernetes"
 	"k8s.io/client-go/1.4/pkg/util/flowcontrol"
 	"k8s.io/client-go/1.4/rest"
